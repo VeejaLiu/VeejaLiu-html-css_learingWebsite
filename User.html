@@ -1,0 +1,149 @@
+<html>
+
+	<head>
+		<title>To be named HOMEPAGE</title>
+		<meta name="keywords" content="study,HTML,webpage,learning,veeja">
+		<meta name="author" content="veeja">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<script type="application/javascript">
+		</script>
+		<style>
+			/*去掉所有元素的内外边距*/
+			
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			/*顶部导航栏的样式*/
+			
+			#head {
+				margin: 0 auto;
+				width: 1030px;
+				height: 70px;
+				/*background: green;*/
+				z-index: 10000;
+			}
+			
+			#head div {
+				margin: 1px;
+				border-radius: 6px;
+				float: left;
+				width: 200px;
+				height: 70px;
+				background: white;
+				opacity: 0.8;
+				z-index: 10001;
+			}
+			
+			#head div div {
+				margin: 1px 45px;
+				height: 33px;
+				width: 107px;
+				font-size: 25px;
+				background: gray;
+				visibility: hidden;
+			}
+			
+			#head div:hover .dri {
+				visibility: visible;
+			}
+			/*背景图片,在imgs文件夹下,名字为bg.jpg*/
+			
+			body {
+				background: url(imgs/bg.jpg) fixed;
+			}
+			/*底部信息的样式*/
+			
+			.info {
+				width: 220px;
+				height: 30px;
+				opacity: 0.5;
+				margin: auto;
+				position: relative;
+			}
+			
+			.info p {
+				font-size: 12px;
+			}
+			
+			#main {
+				width: auto;
+				position: relative;
+			}
+		</style>
+	</head>
+
+	<body text="white" link="white" vlink="white" alink="white" leftmargin="20" topmargin="30">
+		<!--页面顶部-->
+		<a name="top"></a>
+		<!--上方的导航条-->
+		<div id="head">
+			<div>
+				<a href="info.html"><img src="imgs/info.png" /></a>
+				<div class="dri">网站信息</div>
+			</div>
+			<div>
+				<a href="problem.html"><img src="imgs/problem.png" /></a>
+				<div class="dri">问题反馈</div>
+			</div>
+			<div class="title">
+				<a href="index.html"><img src=" imgs/title.png " /></a>
+			</div>
+			<div>
+				<a href="forum.html"><img src="imgs/forum.png" /></a>
+				<div class="dri">论坛讨论</div>
+			</div>
+			<div>
+				<a href="User.html"><img src="imgs/user.png" /></a>
+				<div class="dri">登录注册</div>
+			</div>
+		</div>
+		<br />
+		<br /><br /><br /><br />
+		<br /> 你的位置:
+		<a href="index.html">首页</a>->
+		<a href="User.html">登录注册</a>
+
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+		<div id="main">
+			<div style="margin: auto;width: 500px;height: auto;text-align: center;border-radius: 5px;border: rgba(255,255,255,0.15) 1px solid; background: rgba(255,255,255,0.15);position: relative;">
+				<font></font>
+
+				<div style="width: 500px;">
+					<br><br>
+					<font>用户名：</font>
+					<input type="text" name="email" size="10" maxlength="70" required style="border: 1px solid #DADADA;color: #888;height: 30px;outline: 0 none;width: 200px;font-size:10px;lineheight:15px;box-shadow: inset 0px 1px 4px #ECECEC;-moz-box-shadow: inset 0px 1px 4px #ECECEC;-webkit-box-shadow: inset 0px 1px 4px #ECECEC;margin-left: 0px;">
+					<br><br>
+					<font style="margin-left: 8;">密 码：</font>
+					<input type="password" name="email" size="10" maxlength="70" required style="border: 1px solid #DADADA;color: #888;height: 30px;outline: 0 none;width: 200px;font-size:10px;lineheight:15px;box-shadow: inset 0px 1px 4px #ECECEC;-moz-box-shadow: inset 0px 1px 4px #ECECEC;-webkit-box-shadow: inset 0px 1px 4px #ECECEC;margin-left: 0px;">
+					<br><br>
+					<input type="submit" value="登陆" style="margin-right: 40px;margin-left: 70px;
+background: #E27575;
+border: none;
+padding: 10px 25px 10px 25px;
+color: #FFF;
+box-shadow: 1px 1px 5px #B6B6B6;
+border-radius: 5px;
+text-shadow: 1px 1px 1px #9E3F3F;
+cursor: pointer;">
+					<input type="submit" value="注册" style="background: #E27575;
+border: none;
+padding: 10px 25px 10px 25px;
+color: #FFF;
+box-shadow: 1px 1px 5px #B6B6B6;
+border-radius: 5px;
+text-shadow: 1px 1px 1px #9E3F3F;
+cursor: pointer;">
+					<br><br>
+				</div>
+			</div> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+			<div class="info">
+
+				<p>Copyright©青岛理工大学Web开发大赛<br />版权所有 翻版必究©To_be_named</p>
+			</div>
+		</div>
+	</body>
+
+</html>

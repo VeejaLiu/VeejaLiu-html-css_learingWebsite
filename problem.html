@@ -1,0 +1,146 @@
+<html>
+
+	<head>
+		<title>To be named HOMEPAGE</title>
+		<meta name="keywords" content="study,HTML,webpage,learning,veeja">
+		<meta name="author" content="veeja">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<style>
+			/*去掉所有元素的内外边距*/
+			
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			/*顶部导航栏的样式*/
+			
+			#head {
+				margin: 0 auto;
+				width: 1030px;
+				height: 70px;
+				/*background: green;*/
+				z-index: 10000;
+			}
+			
+			#head div {
+				margin: 1px;
+				border-radius: 6px;
+				float: left;
+				width: 200px;
+				height: 70px;
+				background: white;
+				opacity: 0.8;
+				z-index: 10001;
+			}
+			
+			#head div div {
+				margin: 1px 45px;
+				height: 33px;
+				width: 107px;
+				font-size: 25px;
+				background: gray;
+				visibility: hidden;
+			}
+			
+			#head div:hover .dri {
+				visibility: visible;
+			}
+			/*背景图片,在imgs文件夹下,名字为bg.jpg*/
+			
+			body {
+				background: url(imgs/bg.jpg) no-repeat;
+			}
+			/*导航大盒子的样式*/
+			/*底部信息的样式*/
+			
+			.info {
+				width: 220px;
+				height: 30px;
+				margin: 0 auto;
+				opacity: 0.5;
+			}
+			
+			.info p {
+				font-size: 12px;
+			}
+		</style>
+	</head>
+
+	<body text="white" link="white" vlink="white" alink="white" leftmargin="20" topmargin="30">
+		<!--页面顶部-->
+		<a name="top"></a>
+		<!--上方的导航条-->
+		<div id="head">
+			<div>
+				<a href="info.html"><img src="imgs/info.png" /></a>
+				<div class="dri">网站信息</div>
+			</div>
+			<div>
+				<a href="problem.html"><img src="imgs/problem.png" /></a>
+				<div class="dri">问题反馈</div>
+			</div>
+			<div class="title">
+				<a href="index.html"><img src=" imgs/title.png " /></a>
+			</div>
+			<div>
+				<a href="forum.html"><img src="imgs/forum.png" /></a>
+				<div class="dri">论坛讨论</div>
+			</div>
+			<div>
+				<a href="User.html"><img src="imgs/user.png" /></a>
+				<div class="dri">登录注册</div>
+			</div>
+		</div>
+		<br />
+		<br /><br /><br /><br />
+		<br /> 你的位置:
+		<a href="index.html">首页</a>
+
+		<br>
+		<br>
+		<div id="fk" style="margin: auto;width: 500px;height: 500px;text-align: center;border-radius: 5px;border: rgba(255,255,255,0.15) 1px solid; background: rgba(255,255,255,0.15);position: relative;">
+			<div style="text-align: left;width: 400px;height: 50px;position: absolute;margin-left: 25px;margin-top: 16px;">
+				<form action="#" enctype="multipart/form-data" method="post">
+					<font style="font-family: simhei ;font-size: 25px ;color: white;font-weight: bold;">邮箱:</font><br>
+					<input type="text" name="email" size="10" maxlength="70" required style="border: 1px solid #DADADA;color: #888;height: 30px;outline: 0 none;width: 200px;font-size:10px;lineheight:15px;box-shadow: inset 0px 1px 4px #ECECEC;-moz-box-shadow: inset 0px 1px 4px #ECECEC;-webkit-box-shadow: inset 0px 1px 4px #ECECEC;margin-left: 60px;">
+					<select name="country" style="border: 1px solid #DADADA;color: #888;height: 30px;margin-bottom: 16px;outline: 0 none;padding: 3px 3px 3px 5px;width: 100px;font-size:12px;lineheight:15px;box-shadow: inset 0px 1px 4px #ECECEC;-moz-box-shadow: inset 0px 1px 4px #ECECEC;-webkit-box-shadow: inset 0px 1px 4px #ECECEC;">
+						<option value="1">@qq.com</option>
+						<option value="2">@163.com</option>
+						<option value="3">@google.com</option>
+						<option value="4">@sina.com</option>
+					</select>
+			</div>
+			<div style="position: absolute;margin-top: 80px;margin-left: 0px;text-align: left;margin-left: 25px;">
+				<font style="font-family: simhei ;font-size: 25px ;color: white;font-weight: bold;">问题：</font>
+				<br>
+				<input type="checkbox" value="1" name="problem" style="margin-top: 3px;margin-left: 60px;">内容错误
+				<input type="checkbox" value="2" name="problem">排版美化
+				<input type="checkbox" value="3" name="problem">打开速度
+				<input type="checkbox" value="4" name="problem">功能缺失
+				<br>
+				<font style="font-family: simhei;font-size: 25px;position: absolute;margin-top: 5px;font-weight: bold;">留言：</font>
+				</form>
+			</div>
+			<div id="fk-1" style="position: absolute;margin: 165px 26px;text-align: left;">
+
+				<textarea name="fk" style="width: 365px;height: 200px;border-radius: 5px;background: rgba(255,255,255,0.87);margin-left: 60px;"></textarea>
+				<br>
+				<font style="font-family: simhei;font-size: 25px;font-weight: bold;">请选择上传文件：</font>
+				<br><input type="file" name="filelist" value="浏览..." style="margin-top: 10px;margin-left: 60px; box-shadow: inset 0px 1px 4px #ECECEC;-moz-box-shadow: inset 0px 1px 4px #ECECEC;-webkit-box-shadow: inset 0px 1px 4px #ECECEC;">
+			</div>
+			<div style="position: absolute;margin: 440px 0px 0px 350px">
+				<input type="submit" value="提交反馈" style="background: #E27575;
+				border: none;
+				padding: 10px 25px 10px 25px;
+				color: #FFF;
+				box-shadow: 1px 1px 5px #B6B6B6;
+				border-radius: 5px;
+				text-shadow: 1px 1px 1px #9E3F3F;
+				cursor: pointer;"></div>
+			</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<div class="info"><br>
+			<p align="center">Copyright©青岛理工大学Web开发大赛<br />版权所有 翻版必究©To_be_named</p>
+		</div>
+	</body>
+
+</html>

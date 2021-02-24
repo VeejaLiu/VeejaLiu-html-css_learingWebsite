@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>fullPage.js — 基本演示_dowebok</title>
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<style>
+			/*去掉所有元素的内外边距*/
+			
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			/*顶部导航栏的样式*/
+			
+			#head {
+				position: fixed;
+				left: 50%;
+				margin-left: -515px;
+				width: 1030px;
+				height: 70px;
+				/*background: green;*/
+				z-index: 10000;
+			}
+			
+			#head div {
+				margin: 1px;
+				border-radius: 6px;
+				float: left;
+				width: 200px;
+				height: 70px;
+				background: white;
+				opacity: 0.8;
+				z-index: 10001;
+			}
+			
+			#head div div {
+				margin: 1px 45px;
+				height: 33px;
+				width: 107px;
+				font-size: 25px;
+				background: gray;
+				visibility: hidden;
+			}
+			
+			#head div:hover .dri {
+				visibility: visible;
+			}
+			/*背景图片,在imgs文件夹下,名字为bg.jpg*/
+			
+			body {
+				background: url(imgs/bg2.jpg) fixed;
+			}
+			/*导航大盒子的样式*/
+			/*底部信息的样式*/
+			
+			.info {
+				color: white;
+				width: 220px;
+				height: 30px;
+				opacity: 0.8;
+			}
+			
+			.info p {
+				font-size: 12px;
+			}
+			
+			#download {
+				color: #000000;
+				border-radius: 9px;
+				font-size: 1.5em;
+				padding: 20px;
+				background: rgba(150, 130, 94, 0.9);
+				margin: 0 auto;
+				width: 1500px;
+				height: 210px;
+			}
+			
+			#person {
+				margin: 0 auto;
+				width: 1500px;
+				height: 560px;
+			}
+			
+			#person div {
+				position: relative;
+				float: left;
+			}
+			
+			.a {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -90px;
+				margin-top: 105px;
+			}
+			
+			.b {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: 37px;
+				margin-top: 107px;
+			}
+			
+			.title {
+				border-radius: 9px;
+				margin: 0 auto;
+				width: 1500px;
+				height: 50px;
+				font-size: 3em;
+			}
+			
+			.thank {
+				font-size: 8em;
+				margin: 0 auto;
+				width: 810px;
+				height: 50px;
+			}
+		</style>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script>
+			$(function() {
+				$('#dowebok').fullpage({
+					sectionsColor: [' ', ' ', ' ', ' ']
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="head">
+			<div>
+				<a href="info.html"><img src="imgs/info.png" /></a>
+				<div class="dri">网站信息</div>
+			</div>
+			<div>
+				<a href="problem.html"><img src="imgs/problem.png" /></a>
+				<div class="dri">问题反馈</div>
+			</div>
+			<div class="title">
+				<a href="index.html"><img src=" imgs/title.png " /></a>
+			</div>
+			<div>
+				<a href="forum.html"><img src="imgs/forum.png" /></a>
+				<div class="dri">论坛讨论</div>
+			</div>
+			<div>
+				<a href="User.html"><img src="imgs/user.png" /></a>
+				<div class="dri">登录注册</div>
+			</div>
+		</div>
+		<div id="dowebok">
+			<div class="section">
+				<div style="margin: 0px;width: 100%;height: 100%; background-image: url(imgs/bg2.jpg);"><br /><br /><br /><br /><br /><br /><br /><br />
+					<div class="title">制作人员名单
+					</div>
+					<br /><br />
+					<div id="person">
+
+						<!--石津妮-->
+						<div>
+							<img src="imgs/info_shijinni.png" />
+							<a href="http://blog.csdn.net/sjn2194662620">
+								<img class="a" src="imgs/csdn.png" />
+							</a>
+							<a href="https://weibo.com/5189421760">
+								<img class="b" src="imgs/sina.png" />
+							</a>
+						</div>
+						<!--冯俊-->
+						<div>
+							<img src="imgs/info_fengjun.png" />
+							<a href="http://blog.csdn.net/junvon_d">
+								<img class="a" src="imgs/csdn.png" />
+							</a>
+							<a href="https://weibo.com/6233517344/">
+								<img class="b" src="imgs/sina.png" />
+							</a>
+						</div>
+						<!--刘伟佳-->
+						<div>
+							<img src="imgs/info_liuweijia.png" />
+							<a href="http://blog.csdn.net/u014565127">
+								<img class="a" src="imgs/csdn.png" />
+							</a>
+							<a href="https://weibo.com/svk1521121950">
+								<img class="b" src="imgs/sina.png" />
+							</a>
+						</div>
+						<!--汪伸伸-->
+						<div>
+							<img src="imgs/info_wangshenshen.png" />
+							<a href="http://blog.csdn.net/shiguangfengyu">
+								<img class="a" src="imgs/csdn.png" />
+							</a>
+							<a href="https://weibo.com/p/1005056042584506">
+								<img class="b" src="imgs/sina.png" />
+							</a>
+						</div>
+						<!--孙尚晴-->
+						<div>
+							<img src="imgs/info_sunshangqing.png" />
+							<a href="http://blog.csdn.net/sq_sunshangqing">
+								<img class="a" src="imgs/csdn.png" />
+							</a>
+							<a href="http://weibo.com/u/6376588183">
+								<img class="b" src="imgs/sina.png" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div style="margin: 0px;width: 100%;height: 100%; background-image: url(imgs/bg4.jpg);">
+					<br /><br /><br />
+					<div class="title" style="margin-top: 200px;">相关下载:<br />
+					</div><br /><br /><br />
+					<div id="download">
+
+						您可以
+						<a href="download/ROOT.rar" download="download/ROOT.rar">点击此处</a>下载整个网站的内容,包括本网站所有的<b><u>图片/音频/视频/源代码</u></b>等等内容.(最后更新时间:2017年11月24日07:05:06)<br /> <br />本网站作者们使用的编辑器主要有Hbuilder,Editplus,Sublime.<br /> 您可以前往
+						<a href="http://www.dcloud.io/" target="_blank">Hbuilder官网</a>/
+						<a href="https://www.editplus.com/" target="_blank">Editplus官网</a>/
+						<a href="https://www.sublimetext.com/" target="_blank">Sublime官网</a>获取这些编辑器.<br /><br /> 与本网站相关的服务或资源还有这些,你可以点击下面的链接访问或了解它们,
+						<br />
+						<a href="https://www.aliyun.com" target="_blank">Alicloud</a>,
+						<a href="https://www.centos.org/" target="_blank">CentOS</a>,
+						<a href="http://tomcat.apache.org/" target="_blank">Apache Tomcat</a>.<br />
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div style="margin: 0px;width: 100%;height: 100%; background-image: url(imgs/bg3.jpg);">
+					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+					<div class="thank">感谢您的访问!
+						<br />
+					</div>
+				</div>
+				<div class="info">
+					<p align="center">Copyright©青岛理工大学Web开发大赛<br />版权所有 翻版必究©To_be_named</p>
+				</div>
+				<div class="section">
+					<div style="margin: 0px;width: 100%;height: 100%; background-image: url(imgs/bg.jpg);"></div>
+				</div>
+			</div>
+
+	</body>
+
+</html>

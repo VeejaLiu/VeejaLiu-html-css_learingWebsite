@@ -1,0 +1,161 @@
+<html>
+
+	<head>
+		<title>To be named HOMEPAGE</title>
+		<meta name="keywords" content="study,HTML,webpage,learning,veeja">
+		<meta name="author" content="veeja">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<script type="application/javascript" src="pl.js">
+		</script>
+		<style>
+			/*去掉所有元素的内外边距*/
+			
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			/*顶部导航栏的样式*/
+			
+			#head {
+				position: fixed;
+				left: 50%;
+				margin-left: -515px;
+				width: 1030px;
+				height: 70px;
+				/*background: green;*/
+				z-index: 10000;
+			}
+			
+			#head div {
+				margin: 1px;
+				border-radius: 6px;
+				float: left;
+				width: 200px;
+				height: 70px;
+				background: white;
+				opacity: 0.8;
+				z-index: 10001;
+			}
+			
+			#head div div {
+				margin: 1px 45px;
+				height: 33px;
+				width: 107px;
+				font-size: 25px;
+				background: gray;
+				visibility: hidden;
+			}
+			
+			#head div:hover .dri {
+				visibility: visible;
+			}
+			/*背景图片,在imgs文件夹下,名字为bg.jpg*/
+			
+			body {
+				background: url(imgs/bg.jpg) no-repeat;
+			}
+			/*底部信息的样式*/
+			
+			.info {
+				width: 220px;
+				height: 30px;
+				opacity: 0.5;
+				margin: auto;
+				position: relative;
+			}
+			
+			.info p {
+				font-size: 12px;
+			}
+			
+			#main {
+				width: auto;
+				position: relative;
+			}
+			
+			#showpl div {
+				background: rgba(79, 79, 79, 0.6);
+				margin: 0px 30px 0px 30px;
+				padding: 5px;
+			}
+			
+			#showpl div div {
+				height auto;
+			}
+			
+			.commentpic {
+				width: 90px;
+			}
+			
+			.plk {
+				margin: 30px 30px 30px 30px;
+				padding: 0px;
+			}
+		</style>
+	</head>
+
+	<body text="white" link="white" vlink="white" alink="white" leftmargin="20" topmargin="30">
+		<!--页面顶部-->
+		<a name="top"></a>
+		<!--上方的导航条-->
+		<div id="head">
+			<div>
+				<a href="info.html"><img src="imgs/info.png" /></a>
+				<div class="dri">网站信息</div>
+			</div>
+			<div>
+				<a href="problem.html"><img src="imgs/problem.png" /></a>
+				<div class="dri">问题反馈</div>
+			</div>
+			<div class="title">
+				<a href="index.html"><img src=" imgs/title.png " /></a>
+			</div>
+			<div>
+				<a href="forum.html"><img src="imgs/forum.png" /></a>
+				<div class="dri">论坛讨论</div>
+			</div>
+			<div>
+				<a href="User.html"><img src="imgs/user.png" /></a>
+				<div class="dri">登录注册</div>
+			</div>
+		</div>
+		<br />
+		<br /><br /><br /><br />
+		<br /> 你的位置:
+		<a href="index.html">首页</a>
+		<div id="main">
+			<div style="margin: auto;width: 1000px;height: auto;text-align: center;border-radius: 5px;border: rgba(255,255,255,0.15) 1px solid; background: rgba(255,255,255,0.15);position: relative;">
+				<div id="spl" style="background: rgba(221,221,221,0.79);">
+					<div></div>
+				</div>
+				<div id="spl">
+					<div style="background: rgba(221,221,221,0.79);">
+						<div id="big" style="width: 650px;">
+							<div id="showpl" style="overflow-y: auto;height: 500px;width: 600px;text-align: left;margin-left: 200">
+								<br>
+								<div>
+									<img src="imgs/user.png" class="commentpic">
+									<font class="pltime">匿名 2017年11月24号3:44</font>
+									<div>
+										<font class="plk">verygoood</font><br>
+									</div>
+									<p><br></p>
+								</div>
+							</div>
+							<textarea name="pl1" id="pl" style="border-radius: 5px;width: 600px;height: 200px;margin-top: 30px;margin-bottom: 5px; font-size: 20px;margin-left: 200px;">请输入您的评论</textarea>
+							<div style="margin-top: 12px;margin-left: 600">
+								<input type="button" value="提交评论" style="background: #E27575;border: none;padding: 10px 25px 10px 25px;color: #FFF;box-shadow: 1px 1px 5px #B6B6B6;border-radius: 5px;text-shadow: 1px 1px 1px #9E3F3F;cursor: pointer;" onClick="submitpl();"></div>
+							<br>
+						</div>
+					</div>
+				</div>
+
+			</div><br /><br /><br /><br />
+			<div class="info">
+
+				<p>Copyright©青岛理工大学Web开发大赛<br />版权所有 翻版必究©To_be_named</p>
+			</div><br />
+		</div>
+	</body>
+
+</html>

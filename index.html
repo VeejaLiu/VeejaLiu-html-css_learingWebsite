@@ -1,0 +1,309 @@
+<html>
+
+	<head>
+		<title>To be named HOMEPAGE</title>
+		<meta name="keywords" content="study,HTML,webpage,learning,veeja">
+		<meta name="author" content="veeja">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<style>
+			/*去掉所有元素的内外边距*/
+			
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			/*顶部导航栏的样式*/
+			
+			#head {
+				margin: 0 auto;
+				width: 1030px;
+				height: 70px;
+				/*background: green;*/
+				z-index: 10000;
+			}
+			
+			#head div {
+				margin: 1px;
+				border-radius: 6px;
+				float: left;
+				width: 200px;
+				height: 70px;
+				background: white;
+				opacity: 0.8;
+				z-index: 10001;
+			}
+			
+			#head div div {
+				margin: 1px 45px;
+				height: 33px;
+				width: 107px;
+				font-size: 25px;
+				background: gray;
+				visibility: hidden;
+			}
+			
+			#head div:hover .dri {
+				visibility: visible;
+			}
+			/*背景图片,在imgs文件夹下,名字为bg.jpg*/
+			
+			body {
+				background: url(imgs/bg.jpg) no-repeat;
+			}
+			/*导航大盒子的样式*/
+			
+			#nav {
+				width: 950px;
+				height: 500px;
+				/*background: deepskyblue;*/
+				margin: 50px auto;
+			}
+			/*每个小盒子的样式*/
+			
+			#nav ul li {
+				list-style: none;
+				position: relative;
+				float: left;
+				width: 180px;
+				height: 105px;
+				margin: 30px 5px;
+				background: rgba(255, 255, 255, 0.3);
+				/*text-align: center;*/
+			}
+			/*第六个特殊的样式*/
+			
+			#nav ul li.sixth {
+				margin-left: 100px;
+			}
+			/*before after伪类*/
+			
+			#nav ul li:before,
+			#nav ul li:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 180px;
+				height: 105px;
+				background: rgba(255, 255, 255, 0.3);
+				transform: rotate(60deg);
+			}
+			/*after特殊的地方*/
+			
+			#nav ul li:after {
+				transform: rotate(-60deg);
+			}
+			/*每个图标的样式*/
+			
+			#nav ul li img {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -40px;
+				margin-top: -40px;
+				/*层级,整数,越大越靠上,只有定位元素才能设置层级*/
+				z-index: 999;
+			}
+			/*提示字符的div的样式*/
+			
+			.text-box {
+				visibility: hidden;
+				border-radius: 12px;
+				background: rgba(255, 255, 255, 0.7);
+				position: absolute;
+				z-index: 900;
+				top: 14px;
+				left: 80px;
+				width: 160px;
+				height: 80px;
+			}
+			/*鼠标移动到上面的时候,可见性变成visible*/
+			
+			#nav ul li:hover .text-box {
+				visibility: visible;
+			}
+			/*提示框的字体样式*/
+			
+			.text-box p {
+				top: 9px;
+				left: 28px;
+				position: absolute;
+				width: 150;
+				float: right;
+				color: #000000;
+				text-align: center;
+				font-size: 24px;
+				font-family: "微软雅黑";
+			}
+			/*底部信息的样式*/
+			
+			.info {
+				width: 220px;
+				height: 30px;
+				margin: 0 auto;
+				opacity: 0.5;
+			}
+			
+			.info p {
+				font-size: 12px;
+			}
+		</style>
+	</head>
+
+	<body text="white" link="white" vlink="white" alink="white" leftmargin="20" topmargin="30">
+		<!--页面顶部-->
+		<a name="top"></a>
+		<!--上方的导航条-->
+		<div id="head">
+			<div>
+				<a href="info.html"><img src="imgs/info.png" /></a>
+				<div class="dri">网站信息</div>
+			</div>
+			<div>
+				<a href="problem.html"><img src="imgs/problem.png" /></a>
+				<div class="dri">问题反馈</div>
+			</div>
+			<div class="title">
+				<a href="index.html"><img src=" imgs/title.png " /></a>
+			</div>
+			<div>
+				<a href="forum.html"><img src="imgs/forum.png" /></a>
+				<div class="dri">论坛讨论</div>
+			</div>
+			<div>
+				<a href="User.html"><img src="imgs/user.png" /></a>
+				<div class="dri">登录注册</div>
+			</div>
+		</div>
+		<br />
+		<br /><br /><br /><br />
+		<br /> 你的位置:
+		<a href="index.html">首页</a>
+		<br />
+		<br />
+		<br />
+		<div id="nav">
+			<ul>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/001.png" />
+					</a>
+					<div class="text-box">
+						<p>结构</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/002.png" />
+					</a>
+					<div class="text-box">
+						<p>文本</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/003.png" />
+					</a>
+					<div class="text-box">
+						<p>列表</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/004.png" />
+					</a>
+					<div class="text-box">
+						<p>链接</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/005.png" />
+					</a>
+					<div class="text-box">
+						<p>图像</p>
+					</div>
+				</li>
+				<li class="sixth">
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/006.png" />
+					</a>
+					<div class="text-box">
+						<p>表格/表单</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/007.png" />
+					</a>
+					<div class="text-box">
+						<p>Flash<br />视频/音频</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/008.png" />
+					</a>
+					<div class="text-box">
+						<p>CSS<br />简介</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/009.png" />
+					</a>
+					<div class="text-box">
+						<p>CSS<br />颜色</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/010.png" />
+					</a>
+					<div class="text-box">
+						<p>CSS<br />文本</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/011.png" />
+					</a>
+					<div class="text-box">
+						<p>CSS<br />盒子</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/012.png" />
+					</a>
+					<div class="text-box">
+						<p>CSS 列表<br />表格/表单</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/013.png" />
+					</a>
+					<div class="text-box">
+						<p>CSS<br />布局</p>
+					</div>
+				</li>
+				<li>
+					<a href="chapter/ch01/ch01.html">
+						<img src="imgs/014.png" />
+					</a>
+					<div class="text-box">
+						<p>CSS<br />图像</p>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+
+		<br /><br /><br /><br /><br />
+		<div class="info">
+			<p align="center">Copyright©青岛理工大学Web开发大赛<br />版权所有 翻版必究©To_be_named</p>
+		</div>
+	</body>
+
+</html>
